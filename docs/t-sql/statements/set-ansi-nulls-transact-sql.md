@@ -100,7 +100,8 @@ SELECT @ANSI_NULLS AS ANSI_NULLS;
 ```sql  
 -- Create table t1 and insert values.  
 CREATE TABLE dbo.t1 (a INT NULL);  
-INSERT INTO dbo.t1 values (NULL),(0),(1);  
+INSERT INTO dbo.t1 (a) values (NULL),(0),(1);  
+GO  
 GO  
   
 -- Print message and perform SELECT statements.  
